@@ -1,0 +1,99 @@
+/* ===== RESPONSIVE - GLOBAL OVERRIDES ===== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .section-title p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .section-title span {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .social-links,
+    .scroll-indicator,
+    #darkMode,
+    .hamburger,
+    .floating-badge,
+    .footer-newsletter,
+    .contact-form,
+    #backToTop {
+        display: none !important;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .skills {
+        padding: 40px 0;
+    }
+
+    .contact {
+        padding: 40px 0;
+    }
+
+    .portfolio {
+        padding: 40px 0;
+    }
+
+    .portfolio-overlay {
+        opacity: 1 !important;
+        background: transparent !important;
+    }
+
+    .portfolio-links a {
+        background: transparent !important;
+        color: var(--primary) !important;
+        transform: none !important;
+    }
+}
